@@ -8,8 +8,8 @@ DB_PASSWORD=
 DB_NAME=books
 
 AWS_ACCESS_KEY_ID=AKIA4HNZPSWBOQ6ZMW4F
-AWS_SECRET_ACCESS_KEY=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
-AWS_BUCKET_NAME=librarycars-api-solohaga
+AWS_SECRET_ACCESS_KEY=pU0FZOMvujaDd0WpApNC1EfEdc6VQ5vlvHDKZZV5ddddddddddddddddddddddd borre las d
+AWS_BUCKET_NAME=librarycars-api-solohagaddddddddddddddddddddddddddddddddddddddddddddd borre las d
 AWS_REGION=us-east-1
 
 JWT_SECRET=54321
