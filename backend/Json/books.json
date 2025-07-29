@@ -1,0 +1,84 @@
+{
+    "libros": [
+        {
+            "id": 1,
+            "title": "Cien años de soledad",
+            "author": "Gabriel García Márquez",
+            "year": 1967,
+            "publisher": "Editorial Sudamericana",
+            "genres": [
+                "Realismo mágico",
+                "Ficción"
+            ],
+            "cover": "https://example.com/portadas/cien_anos_de_soledad.jpg",
+            "description": "Una obra maestra del realismo mágico, que narra la historia de la familia Buendía a lo largo de varias generaciones en el mítico pueblo de Macondo."
+        },
+        {
+            "id": 2,
+            "title": "1984",
+            "author": "George Orwell",
+            "year": 1949,
+            "publisher": "Secker & Warburg",
+            "genres": [
+                "Distopía",
+                "Ciencia ficción",
+                "Política"
+            ],
+            "cover": "https://example.com/portadas/1984.jpg",
+            "description": "Una novela distópica que describe una sociedad totalitaria y vigilada, donde el gobierno manipula la realidad y la verdad."
+        },
+        {
+            "id": 3,
+            "title": "El nombre del viento",
+            "author": "Patrick Rothfuss",
+            "year": 2007,
+            "publisher": "DAW Books",
+            "genres": [
+                "Fantasía",
+                "Aventura"
+            ],
+            "cover": "https://example.com/portadas/el_nombre_del_viento.jpg",
+            "description": "La historia de Kvothe, un joven prodigio que narra su vida llena de magia, misterios y aventuras."
+        },
+        {
+            "id": 4,
+            "title": "Orgullo y prejuicio",
+            "author": "Jane Austen",
+            "year": 1813,
+            "publisher": "T. Egerton, Whitehall",
+            "genres": [
+                "Romance",
+                "Clásico"
+            ],
+            "cover": "https://example.com/portadas/orgullo_y_prejuicio.jpg",
+            "description": "Una historia de amor y malentendidos en la Inglaterra del siglo XIX, que explora la naturaleza del orgullo, el prejuicio y la clase social."
+        },
+        {
+            "id": 5,
+            "title": "La sombra del viento",
+            "author": "Carlos Ruiz Zafón",
+            "year": 2001,
+            "publisher": "Planeta",
+            "genres": [
+                "Misterio",
+                "Ficción histórica"
+            ],
+            "cover": "https://example.com/portadas/la_sombra_del_viento.jpg",
+            "description": "Una novela llena de misterio, que sigue la vida de un joven en la Barcelona de la posguerra, que descubre un libro oculto que cambiará su vida."
+        }
+    ],
+    "favoritos": [
+        {
+            "userId": 1,
+            "bookId": 2
+        },
+        {
+            "userId": 1,
+            "bookId": 3
+        },
+        {
+            "userId": 2,
+            "bookId": 1
+        }
+    ]
+}

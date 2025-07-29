@@ -1,0 +1,126 @@
+[
+    {
+        "id": 1,
+        "name": "Realismo mágico"
+    },
+    {
+        "id": 2,
+        "name": "Ficción"
+    },
+    {
+        "id": 3,
+        "name": "Distopía"
+    },
+    {
+        "id": 4,
+        "name": "Ciencia ficción"
+    },
+    {
+        "id": 5,
+        "name": "Política"
+    },
+    {
+        "id": 6,
+        "name": "Fantasía"
+    },
+    {
+        "id": 7,
+        "name": "Aventura"
+    },
+    {
+        "id": 8,
+        "name": "Romance"
+    },
+    {
+        "id": 9,
+        "name": "Clásico"
+    },
+    {
+        "id": 10,
+        "name": "Misterio"
+    },
+    {
+        "id": 11,
+        "name": "Ficción histórica"
+    },
+    {
+        "id": 12,
+        "name": "Terror"
+    },
+    {
+        "id": 13,
+        "name": "Historia"
+    },
+    {
+        "id": 14,
+        "name": "Biografía"
+    },
+    {
+        "id": 15,
+        "name": "Autoayuda"
+    },
+    {
+        "id": 16,
+        "name": "Poesía"
+    },
+    {
+        "id": 17,
+        "name": "Juvenil"
+    },
+    {
+        "id": 18,
+        "name": "Infantil"
+    },
+    {
+        "id": 19,
+        "name": "Literatura Clásica"
+    },
+    {
+        "id": 20,
+        "name": "Ensayo"
+    },
+    {
+        "id": 21,
+        "name": "Filosofía"
+    },
+    {
+        "id": 22,
+        "name": "Religión"
+    },
+    {
+        "id": 23,
+        "name": "Ciencia"
+    },
+    {
+        "id": 24,
+        "name": "Tecnología"
+    },
+    {
+        "id": 25,
+        "name": "Salud"
+    },
+    {
+        "id": 26,
+        "name": "Viajes"
+    },
+    {
+        "id": 27,
+        "name": "Arte"
+    },
+    {
+        "id": 28,
+        "name": "Cocina"
+    },
+    {
+        "id": 29,
+        "name": "Deportes"
+    },
+    {
+        "id": 30,
+        "name": "Negocios"
+    },
+    {
+        "id": 31,
+        "name": "Psicología"
+    }
+]

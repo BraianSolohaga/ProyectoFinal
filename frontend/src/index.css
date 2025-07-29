@@ -1,0 +1,510 @@
+/* src/index.css */
+
+@import "tailwindcss";
+
+
+/* Variables CSS para modo claro y oscuro */
+:root {
+    /* Modo claro */
+    --color-primary: #4F46E5;
+    /* indigo-600 */
+    --color-primary-dark: #3730A3;
+    /* indigo-700 */
+    --color-secondary: #10B981;
+    /* emerald-500 */
+    --color-danger: #EF4444;
+    /* red-500 */
+    --color-warning: #F59E0B;
+    /* amber-500 */
+    --color-info: #3B82F6;
+    /* blue-500 */
+
+    --color-text-primary: #111827;
+    /* gray-900 */
+    --color-text-secondary: #6B7280;
+    /* gray-500 */
+    --color-text-muted: #9CA3AF;
+    /* gray-400 */
+
+    --color-bg-primary: #FFFFFF;
+    /* white */
+    --color-bg-secondary: #F9FAFB;
+    /* gray-50 */
+    --color-bg-muted: #F3F4F6;
+    /* gray-100 */
+
+    --color-border: #E5E7EB;
+    /* gray-200 */
+    --color-border-light: #F3F4F6;
+    /* gray-100 */
+
+    --shadow-color: rgb(0 0 0 / 0.1);
+
+    /* Otras variables constantes */
+    --border-radius: 0.5rem;
+    /* 8px */
+    --border-radius-lg: 0.75rem;
+    /* 12px */
+    --border-radius-xl: 1rem;
+    /* 16px */
+
+    --shadow-sm: 0 1px 2px 0 var(--shadow-color);
+    --shadow-md: 0 4px 6px -1px var(--shadow-color), 0 2px 4px -2px var(--shadow-color);
+    --shadow-lg: 0 10px 15px -3px var(--shadow-color), 0 4px 6px -4px var(--shadow-color);
+}
+
+/* Variables para modo oscuro */
+.dark {
+    --color-primary: #6366F1;
+    /* indigo-500 */
+    --color-primary-dark: #4F46E5;
+    /* indigo-600 */
+    --color-secondary: #10B981;
+    /* emerald-500 */
+    --color-danger: #F87171;
+    /* red-400 */
+    --color-warning: #FBBF24;
+    /* amber-400 */
+    --color-info: #60A5FA;
+    /* blue-400 */
+
+    --color-text-primary: #F9FAFB;
+    /* gray-50 */
+    --color-text-secondary: #D1D5DB;
+    /* gray-300 */
+    --color-text-muted: #9CA3AF;
+    /* gray-400 */
+
+    --color-bg-primary: #1F2937;
+    /* gray-800 */
+    --color-bg-secondary: #111827;
+    /* gray-900 */
+    --color-bg-muted: #374151;
+    /* gray-700 */
+
+    --color-border: #4B5563;
+    /* gray-600 */
+    --color-border-light: #374151;
+    /* gray-700 */
+
+    --shadow-color: rgb(0 0 0 / 0.3);
+}
+
+/* Transiciones suaves para el cambio de tema */
+* {
+    transition: background-color 0.2s ease-in-out,
+        border-color 0.2s ease-in-out,
+        color 0.2s ease-in-out,
+        box-shadow 0.2s ease-in-out;
+}
+
+/* Estilos globales para la aplicación */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-secondary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Clases utilitarias para temas */
+.bg-theme-primary {
+    background-color: var(--color-bg-primary);
+}
+
+.bg-theme-secondary {
+    background-color: var(--color-bg-secondary);
+}
+
+.bg-theme-muted {
+    background-color: var(--color-bg-muted);
+}
+
+.text-theme-primary {
+    color: var(--color-text-primary);
+}
+
+.text-theme-secondary {
+    color: var(--color-text-secondary);
+}
+
+.text-theme-muted {
+    color: var(--color-text-muted);
+}
+
+.border-theme {
+    border-color: var(--color-border);
+}
+
+.border-theme-light {
+    border-color: var(--color-border-light);
+}
+
+/* Mejoras para focus y accesibilidad */
+*:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+/* Botones y elementos interactivos */
+button,
+[role="button"],
+input[type="submit"],
+input[type="button"] {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:disabled,
+[role="button"]:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Links */
+a {
+    transition: color 0.2s ease-in-out;
+}
+
+/* Inputs y forms */
+input,
+textarea,
+select {
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgb(79 70 229 / 0.1);
+}
+
+.dark input:focus,
+.dark textarea:focus,
+.dark select:focus {
+    box-shadow: 0 0 0 3px rgb(99 102 241 / 0.2);
+}
+
+/* Scrollbars personalizados */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-bg-muted);
+    border-radius: var(--border-radius);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-text-muted);
+    border-radius: var(--border-radius);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-text-secondary);
+}
+
+/* Utilidades adicionales */
+.line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 1;
+}
+
+.line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+}
+
+.line-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+}
+
+/* Animaciones personalizadas */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-in {
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Mejoras para print */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+
+    body {
+        background: white !important;
+        color: black !important;
+    }
+}
+
+/* Utilidades para loading states */
+.skeleton {
+    background: linear-gradient(90deg,
+            var(--color-bg-muted) 25%,
+            var(--color-border-light) 50%,
+            var(--color-bg-muted) 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Mejoras para tooltips y popovers */
+.tooltip {
+    position: relative;
+}
+
+.tooltip:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-text-primary);
+    color: var(--color-bg-primary);
+    padding: 0.5rem 0.75rem;
+    border-radius: var(--border-radius);
+    font-size: 0.75rem;
+    white-space: nowrap;
+    z-index: 1000;
+    margin-bottom: 0.25rem;
+}
+
+/* Mejoras para estados de error */
+.error-shake {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    75% {
+        transform: translateX(5px);
+    }
+}
+
+/* Estilos específicos para componentes con modo oscuro */
+.card-theme {
+    background-color: var(--color-bg-primary);
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-md);
+}
+
+.input-theme {
+    background-color: var(--color-bg-primary);
+    border: 1px solid var(--color-border);
+    color: var(--color-text-primary);
+}
+
+.input-theme::placeholder {
+    color: var(--color-text-muted);
+}
+
+/* Mejoras para el toggle de tema */
+.theme-toggle {
+    background: var(--color-bg-muted);
+    border: 1px solid var(--color-border);
+    border-radius: 9999px;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.theme-toggle:hover {
+    background: var(--color-border-light);
+    transform: scale(1.05);
+}
+
+/* Estilos para notificaciones (react-hot-toast) en modo oscuro */
+.dark .Toaster__toast {
+    background: var(--color-bg-primary) !important;
+    color: var(--color-text-primary) !important;
+    border: 1px solid var(--color-border) !important;
+}
+
+.dark .Toaster__toast--success {
+    background: var(--color-secondary) !important;
+    color: white !important;
+}
+
+.dark .Toaster__toast--error {
+    background: var(--color-danger) !important;
+    color: white !important;
+}
+
+/* Mejoras para selecciones de texto */
+::selection {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+::-moz-selection {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+/* Mejoras para modo oscuro en elementos específicos */
+.dark img {
+    opacity: 0.9;
+}
+
+.dark .shadow-md {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+}
+
+.dark .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.4);
+}
+
+/* Mejoras para elementos interactivos en modo oscuro */
+.dark button:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dark .bg-white {
+    background-color: var(--color-bg-primary) !important;
+}
+
+.dark .text-gray-900 {
+    color: var(--color-text-primary) !important;
+}
+
+.dark .text-gray-600 {
+    color: var(--color-text-secondary) !important;
+}
+
+.dark .text-gray-500 {
+    color: var(--color-text-muted) !important;
+}
+
+.dark .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.dark .border-gray-300 {
+    border-color: var(--color-border) !important;
+}
+
+.dark .bg-gray-50 {
+    background-color: var(--color-bg-secondary) !important;
+}
+
+.dark .bg-gray-100 {
+    background-color: var(--color-bg-muted) !important;
+}
+
+/* Animación para el cambio de tema */
+@keyframes theme-switch {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+.theme-switching {
+    animation: theme-switch 0.3s ease-in-out;
+}
+
+/* Soporte alternativo para modo oscuro con media query */
+@media (prefers-color-scheme: dark) {
+
+    /* Solo aplica si no hay clase .dark en el body */
+    body:not(.dark) {
+        --color-primary: #6366F1;
+        --color-primary-dark: #4F46E5;
+        --color-secondary: #10B981;
+        --color-danger: #F87171;
+        --color-warning: #FBBF24;
+        --color-info: #60A5FA;
+
+        --color-text-primary: #F9FAFB;
+        --color-text-secondary: #D1D5DB;
+        --color-text-muted: #9CA3AF;
+
+        --color-bg-primary: #1F2937;
+        --color-bg-secondary: #111827;
+        --color-bg-muted: #374151;
+
+        --color-border: #4B5563;
+        --color-border-light: #374151;
+
+        --shadow-color: rgb(0 0 0 / 0.3);
+    }
+}

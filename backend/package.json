@@ -1,0 +1,33 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:local": "cross-env MODE=local node --watch index.js",
+    "dev:mysql": "cross-env MODE=mysql node --watch index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "aws-sdk": "^2.1692.0",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "5.1.0",
+    "express-rate-limit": "^8.0.1",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.1",
+    "mysql2": "^3.14.2",
+    "path": "^0.12.7",
+    "uuid": "^11.1.0",
+    "zod": "^4.0.5"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}

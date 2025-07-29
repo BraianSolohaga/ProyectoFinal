@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@example.com",
+      "password": "$2b$10$YyGfN0Q1m0q1Xr1nPjA7IeWvHqK2AGjL3oVxPb8LtW1k9W2rR7TiG",
+      "role": "admin",
+      "created_at": "2025-07-15T12:00:00Z"
+    },
+    {
+      "id": 2,
+      "username": "user1",
+      "email": "user1@example.com",
+      "password": "$2b$10$z0mPjF5r5Lm1N8yJ3Y7i5uIhDzJhA4zXZCvl6K4YPwYVepON9tySe",
+      "role": "user",
+      "created_at": "2025-07-15T12:10:00Z"
+    },
+    {
+      "id": 3,
+      "username": "user2",
+      "email": "user2@example.com",
+      "password": "$2b$10$kD8Zy1xK9jWl2gG1vN2KPeGbW0aTn4qV7zQ7hFe0s8wF1J4yO6HhK",
+      "role": "user",
+      "created_at": "2025-07-15T12:20:00Z"
+    },
+    {
+      "id": 4,
+      "username": "testuser",
+      "email": "testuser@example.com",
+      "password": "$2b$10$yaq8rMexq/A.0d1pUdvWWuGou8c.vlMy4lsk9wlvvNVaniG/LJ7Xe",
+      "role": "user",
+      "created_at": "2025-07-21T17:40:15.509Z"
+    }
+  ]
+}
